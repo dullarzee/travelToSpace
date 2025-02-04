@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en" class="bg-[#0a0d16]">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="/spaceWebsite.css" rel="stylesheet">
+  <script defer src="/spaceWebsite.js"></script>
+  <link rel="icon" type="image/png" sizes="32x32" href="/assets/favicon-32x32.png">
+  
+  <title id="crewPage">Your Crew</title>
+</head>
+
+<body class="bg-[url('/assets/crew/background-crew-mobile.jpg')] lg:bg-[url('/assets/crew/background-crew-desktop.jpg')] bg-no-repeat bg-cover text-white font-[barlow]">
+  <header>
+    <div class="flex h-[5rem] items-center mb-[10%] lg:mb-[5%] lg:flex lg:items-end w-full lg:h-[8.5rem]">
+      <img alt="" class="mb-[0px] md:mr-[10%] lg:mr-[0px] lg:mb-[1.6%] ml-[5%] h-[3rem] w-[3rem]" src="/assets/shared/logo.svg">
+      <img alt="click to open menu" tabindex="0" id="hamburger" class="ml-[65%] md:hidden lg:hidden cursor-pointer" src="/assets/shared/icon-hamburger.svg">
+      <div class="hidden lg:block border border-white w-[80%] opacity-[30%] relative left-[5%] bottom-[33%] z-10"></div>
+
+      <nav class="hidden md:flex lg:flex md:text-sm lg:text-md bg-white/10 backdrop-blur space-x-[7%] pl-[12%] w-full md:h-full lg:h-[70%]">
+
+        <a href="/index.html">
+        <span id="homeTab" class="inline-block align-center h-[100%] border-b-[3px] border-transparent
+        hover:border-b-white/50 transition-border duration-300 ease-in-out cursor-pointer"><span class="relative top-[38%]"><strong class="mr-2">00</strong> HOME</span></span>
+        </a>
+
+        <a href="/followingPages/destinationPage.html">
+        <span id="destinationTab" class="inline-block align-center h-[100%] border-b-[3px] border-transparent
+        hover:border-b-white/50 transition-border duration-300 ease-in-out cursor-pointer"><span class="relative top-[38%]"><strong class="mr-2">01</strong> DESTINATION</span></span>
+        </a>
+
+        <a href="#">
+        <span id="crewTab" class="inline-block align-center h-[100%] border-b-[3px] border-transparent
+        hover:border-b-white/50 transition-border duration-300 ease-in-out cursor-pointer"><span class="relative top-[38%]"><strong class="mr-2">02</strong> CREW</span></span>
+        </a>
+
+        <a href="/followingPages/technologyPage.html">
+        <span id="techTab" class="inline-block align-center h-[100%] border-b-[3px] border-transparent
+        hover:border-b-white/50 transition-border duration-300 ease-in-out cursor-pointer"><span class="relative top-[38%]"><strong class="mr-2">03</strong> TECHNOLOGY</span></span>
+        </a>
+
+        
+      </nav>
+    </div>
+  </header>
+
+    <main>
+      <div class="">
+        <h1 class="text-center md:text-left lg:text-left md:ml-[5%] lg:ml:[0px] text-[1rem] lg:text-[1.7rem] lg:font-light lg:font-[barlow] tracking-widest lg:pl-[12%] lg:mt-[3%]"><span class="text-gray-700 font-bold mr-[1rem]">02</span>MEET YOUR CREW</h1>
+      </div>  
+      
+      <section class="lg:grid lg:grid-cols-2 px-[2.5%] lg:px-[0px] lg:w-[80%] lg:mx-auto">
+        <div class="pt-[18%] md:pt-[10%] lg:pt-[40%]">
+          <div class="lg:my-auto">
+            <h1 id="role" class="text-xl text-center lg:text-left font-[bellefair] lg:text-3xl text-white/50 lg:my-[4%]">COMMANDER</h1>
+            <h2 id="crewMember" class="font-[bellefair] text-center lg:text-left text-2xl lg:text-5xl mb-[10%] lg:my-[4%]">DOUGLAS HURLEY</h2>
+            <p id="memberFact" class="md:px-[20%] lg:px-[0px] lg:font-[barlow] text-center lg:text-left lg:text-lg text-[#D0D6F9]">
+              Douglas Gerald Hurley is an American engineer, former Marine Corps pilot 
+              and former NASA astronaut. He launched into space for the third time as 
+              commander of Crew Dragon Demo-2.
+            </p>
+          </div>
+
+          <div class="flex justify-center lg:justify-normal items-center mt-[20%] h-[10%] space-x-[6%]">
+            <span id="crewSpan1" tabindex="0" class="w-[0.9rem] h-[0.9rem] lg:w-[1.15rem] lg:h-[1.15rem] bg-white/20 rounded-full hover:bg-white/50 cursor-pointer transition-bg duration-400"></span>
+            <span id="crewSpan2" tabindex="0" class="w-[0.9rem] h-[0.9rem] lg:w-[1.15rem] lg:h-[1.15rem] bg-white/20 rounded-full hover:bg-white/50 cursor-pointer transition-all duration-800 ease"></span>
+            <span id="crewSpan3" tabindex="0" class="w-[0.9rem] h-[0.9rem] lg:w-[1.15rem] lg:h-[1.15rem] bg-white/20 rounded-full hover:bg-white/50 cursor-pointer transition-bg duration-400"></span>
+            <span id="crewSpan4" tabindex="0" class="w-[0.9rem] h-[0.9rem] lg:w-[1.15rem] lg:h-[1.15rem] bg-white/20 rounded-full hover:bg-white/50 cursor-pointer transition-bg duration-400"></span>
+          </div>
+          
+        </div>
+
+        <div class="mt-[10%] lg:mt-[0px] pl-[3%]">
+          <img alt="picture of a person" class="" id="memberImage" src="/assets/crew/image-douglas-hurley.png">
+        </div>
+
+      </section>
+    </main>
+
+
+    <div id="mobileMenu" class="hidden fixed bg-black/30 backdrop-blur  h-[100%] w-[70%] top-[0px] left-[30%] z-20">
+      <img alt="click to close menu" tabindex="0" id="closeMenu" class="relative top-[3%] left-[84%] cursor-pointer" src="/assets/shared/icon-close.svg">
+    
+      <!--Menu for mobile-->
+      <nav class="flex flex-col font-[barlow] mt-[25%] space-y-[10%] pl-[6%]">
+    
+            <a href="/index.html">
+            <span id="mobileTab1" tabindex="0" class="block align-center h-[100%] border-r-[3px] border-transparent
+            hover:border-r-white/50 transition-border duration-300 ease-in-out cursor-pointer"><span class="relative top-[38%]"><strong class="mr-2">00</strong> HOME</span></span>
+            </a>
+    
+            <a href="/followingPages/destinationPage.html">
+            <span id="mobileTab2" tabindex="0" class="block align-center h-[100%] border-r-[3px] border-transparent
+            hover:border-r-white/50 transition-border duration-300 ease-in-out cursor-pointer"><span class="relative top-[38%]"><strong class="mr-2">01</strong> DESTINATION</span></span>
+            </a>
+    
+            <a href="#">
+            <span id="mobileTab3" tabindex="0" class="block align-center h-[100%] border-r-[3px] border-transparent
+            hover:border-r-white/50 transition-border duration-300 ease-in-out cursor-pointer"><span class="relative top-[38%]"><strong class="mr-2">02</strong> CREW</span></span>
+            </a>
+    
+            <a href="/followingPages/technologyPage.html">
+            <span id="mobileTab4" tabindex="0" class="block align-center h-[100%] border-r-[3px] border-transparent
+            hover:border-r-white/50 transition-border duration-300 ease-in-out cursor-pointer"><span class="relative top-[38%]"><strong class="mr-2">03</strong> TECHNOLOGY</span></span>
+            </a>
+    
+          
+        </nav>
+      </div>
+
+</body>
+</html>

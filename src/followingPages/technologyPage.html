@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link href="/spaceWebsite.css" rel="stylesheet">
+  <script defer src="/spaceWebsite.js"></script>
+  <link rel="icon" type="image/png" sizes="32x32" href="/assets/favicon-32x32.png">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+  
+  <title id="technologyPage">Our Technology</title>
+</head>
+<body class="bg-[url('/assets/technology/background-technology-mobile.jpg')] lg:bg-[url('/assets/technology/background-technology-desktop.jpg')] bg-no-repeat bg-cover text-white font-[barlow]">
+
+
+  <!--Navigation bar-->
+  <header>
+    <div class="flex h-[5rem] items-center mb-[10%] lg:mb-[5%] lg:flex lg:items-end w-full lg:h-[8.5rem]">
+      <img alt="" class="mb-[0px] md:mr-[10%] lg:mr-[0px] lg:mb-[1.6%] ml-[5%] h-[3rem] w-[3rem]" src="/assets/shared/logo.svg">
+      <img alt="click to open menu" tabindex="0" id="hamburger" class="ml-[65%] md:hidden lg:hidden cursor-pointer" src="/assets/shared/icon-hamburger.svg">
+      <div class="hidden lg:block border border-white w-[80%] opacity-[30%] relative left-[5%] bottom-[33%] z-10"></div>
+
+      <nav class="hidden md:flex lg:flex bg-white/10 backdrop-blur space-x-[7%] pl-[12%] w-full md:h-full lg:h-[70%]">
+
+        <a href="/index.html">
+        <span id="homeTab" class="inline-block align-center h-[100%] border-b-[3px] border-transparent
+        hover:border-b-white/50 transition-border duration-300 ease-in-out cursor-pointer"><span class="relative top-[38%]"><strong class="mr-2">00</strong> HOME</span></span>
+        </a>
+
+        <a href="/followingPages/destinationPage.html">
+        <span id="destinationTab" class="inline-block align-center h-[100%] border-b-[3px] border-transparent
+        hover:border-b-white/50 transition-border duration-300 ease-in-out cursor-pointer"><span class="relative top-[38%]"><strong class="mr-2">01</strong> DESTINATION</span></span>
+        </a>
+
+        <a href="/followingPages/crewPage.html">
+        <span id="crewTab" class="inline-block align-center h-[100%] border-b-[3px] border-transparent
+        hover:border-b-white/50 transition-border duration-300 ease-in-out cursor-pointer"><span class="relative top-[38%]"><strong class="mr-2">02</strong> CREW</span></span>
+        </a>
+
+        <a href="#">
+        <span id="techTab" class="inline-block align-center h-[100%] border-b-[3px] border-transparent
+        hover:border-b-white/50 transition-border duration-300 ease-in-out cursor-pointer"><span class="relative top-[38%]"><strong class="mr-2">03</strong> TECHNOLOGY</span></span>
+        </a>
+
+        
+      </nav>
+    </div>
+  </header>
+
+    <main class="pb-[15%] lg:pb-[3%]">
+      <div class="mb-[15%] md:mb-[4%] lg:mb-[0px]">
+        <h1 class="text-center md:text-left lg:text-left text-[1rem] lg:text-[1.7rem] lg:font-light lg:font-[barlow] tracking-widest lg:pl-[12%] lg:mt-[3%]"><span class="text-gray-700 font-bold mr-[1rem]">03</span>SPACE LAUNCH 101</h1>
+      </div>
+
+      <section class="flex flex-col-reverse lg:grid lg:grid-cols-[7fr_6fr] lg:w-[90%] lg:ml-[10%] lg:space-x-[2rem]">
+
+        <!--div for vehicle info-->
+        <div class="">
+          <div class="flex flex-col lg:flex-row h-[50%] mt-[25%] md:mt-[1%] lg:mt-[25%]">
+            <!--div for numbers in changing tab-->
+            <div class="flex flex-row justify-evenly md:justify-center lg:justify-normal lg:flex-col lg:items-center px-[20%] md:px-[35%] lg:px-[0px] lg:py-[1rem] w-full lg:w-[24%] lg:h-full 
+            font-[bellefair] md:space-x-[5%] lg:space-x-[0px] lg:space-y-[15%]">
+
+              <span id="vehicleSpan1" tabindex="0" class="flex justify-center items-center w-[2rem] h-[2rem] md:w-[3rem] md:h-[3rem] lg:w-[4.5rem] lg:h-[4.5rem] 
+              text-lg lg:text-3xl border border-white/20 hover:border-white/50 cursor-pointer rounded-full">1</span>
+
+              <span id="vehicleSpan2" tabindex="0" class="flex justify-center items-center w-[2rem] h-[2rem] md:w-[3rem] md:h-[3rem] lg:w-[4.5rem] lg:h-[4.5rem] 
+              text-lg lg:text-3xl border border-white/20 hover:border-white/50 cursor-pointer rounded-full">2</span>
+
+              <span id="vehicleSpan3" tabindex="0" class="flex justify-center items-center w-[2rem] h-[2rem] md:w-[3rem] md:h-[3rem] lg:w-[4.5rem] lg:h-[4.5rem] 
+              text-lg lg:text-3xl border border-white/20 hover:border-white/50 cursor-pointer rounded-full">3</span>
+
+            </div>
+
+            <div class="mt-[10%] md:mt-[1%] lg:mt-[0px] w-full">
+              <h1 class="text-center lg:text-left text-lg lg:text-3xl font-[bellefair] text-white/40">THE TERMINOLOGY...</h1>
+              <h2 id="vehicleName" class="text-center lg:text-left text-2xl md:text-4xl lg:text-6xl font-[bellefair] py-[4%]">LAUNCH VEHICLE</h2>
+              <p id="vehicleFacts" class="text-center lg:text-left text-sm lg:text-lg font-[inter] px-[2%] lg:px-[0px] font-light text-[#D0D6F9]">
+                A launch vehicle or carrier rocket is a rocket-propelled vehicle used to carry a 
+                payload from Earth's surface to space, usually to Earth orbit or beyond. Our 
+                WEB-X carrier rocket is the most powerful in operation. Standing 150 metres tall, 
+                it's quite an awe-inspiring sight on the launch pad!
+              </p>
+
+            </div>
+
+          </div>
+
+        </div>
+
+        <!--div for vehicle image-->
+        <div class="w-full">
+          <picture id="pictureTag" class="">
+            <source srcset="/assets/technology/image-launch-vehicle-landscape.jpg" media="(max-width:570px)">
+            <img aria-live='polite' alt="tech items" id="vehicleImage" class="h-[15rem] md:h-[30rem] lg:h-full pt-[10%] w-full" src="/assets/technology/image-launch-vehicle-portrait.jpg">
+          </picture>
+
+        </div>
+      </section>
+    </main>
+
+    <div id="mobileMenu" class="hidden fixed bg-black/30 backdrop-blur  h-[100%] w-[70%] top-[0px] left-[30%] z-20">
+      <img alt="click to close menu" tabindex="0" id="closeMenu" class="relative top-[3%] left-[84%] cursor-pointer" src="/assets/shared/icon-close.svg">
+    
+      <!--Menu for mobile-->
+      <nav class="flex flex-col font-[barlow] mt-[25%] space-y-[10%] pl-[6%]">
+    
+            <a href="/index.html">
+            <span id="mobileTab1" tabindex="0" class="block align-center h-[100%] border-r-[3px] border-transparent
+            hover:border-r-white/50 transition-border duration-300 ease-in-out cursor-pointer"><span class="relative top-[38%]"><strong class="mr-2">00</strong> HOME</span></span>
+            </a>
+    
+            <a href="/followingPages/destinationPage.html">
+            <span id="mobileTab2" tabindex="0" class="block align-center h-[100%] border-r-[3px] border-transparent
+            hover:border-r-white/50 transition-border duration-300 ease-in-out cursor-pointer"><span class="relative top-[38%]"><strong class="mr-2">01</strong> DESTINATION</span></span>
+            </a>
+    
+            <a href="/followingPages/crewPage.html">
+            <span id="mobileTab3" tabindex="0" class="block align-center h-[100%] border-r-[3px] border-transparent
+            hover:border-r-white/50 transition-border duration-300 ease-in-out cursor-pointer"><span class="relative top-[38%]"><strong class="mr-2">02</strong> CREW</span></span>
+            </a>
+    
+            <a href="#">
+            <span id="mobileTab4" tabindex="0" class="block align-center h-[100%] border-r-[3px] border-transparent
+            hover:border-r-white/50 transition-border duration-300 ease-in-out cursor-pointer"><span class="relative top-[38%]"><strong class="mr-2">03</strong> TECHNOLOGY</span></span>
+            </a>
+    
+          
+        </nav>
+      </div>
+
+</body>
+</html>

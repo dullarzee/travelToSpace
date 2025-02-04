@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="/spaceWebsite.css" rel="stylesheet">
+  <script defer src="/spaceWebsite.js"></script>
+  <link rel="icon" type="image/png" sizes="32x32" href="/assets/favicon-32x32.png">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+  
+  <title id="DestinationPage">Pick your Destination</title>
+</head>
+<body class="bg-[url('/assets/destination/background-destination-mobile.jpg')] lg:bg-[url('/assets/destination/background-destination-desktop.jpg')] bg-no-repeat bg-cover text-white font-[barlow]">
+
+  <header>
+    <div class="flex h-[5rem] items-center mb:[10%] lg:mb-[5%] lg:flex lg:items-end w-full lg:h-[8.5rem]">
+      <img alt="" class="mb-[0px] lg:mb-[1.6%] md:mr-[10%] lg:mr-[0px] ml-[5%] h-[3rem] w-[3rem]" src="/assets/shared/logo.svg">
+      <img alt="click to open menu" tabindex="0" id="hamburger" class="ml-[65%] md:hidden lg:hidden cursor-pointer" src="/assets/shared/icon-hamburger.svg">
+      <div class="hidden lg:block border border-white w-[80%] opacity-[30%] relative left-[5%] bottom-[33%] z-10"></div>
+ 
+      <nav class="hidden md:flex lg:flex md:text-sm lg:text-md bg-white/10 backdrop-blur space-x-[7%] pl-[12%] w-full md:h-full lg:h-[70%]">
+ 
+       <a href="/index.html">
+       <span id="homeTab" class="inline-block align-center h-[100%] border-b-[3px] border-transparent
+        hover:border-b-white/50 transition-border duration-300 ease-in-out cursor-pointer"><span class="relative top-[38%]"><strong class="mr-2">00</strong> HOME</span></span>
+       </a>
+ 
+       <a href="#">
+       <span id="destinationTab" class="inline-block align-center h-[100%] border-b-[3px] border-transparent
+       hover:border-b-white/50 transition-border duration-300 ease-in-out cursor-pointer"><span class="relative top-[38%]"><strong class="mr-2">01</strong> DESTINATION</span></span>
+       </a>
+ 
+       <a href="/followingPages/crewPage.html">
+       <span id="crewTab" class="inline-block align-center h-[100%] border-b-[3px] border-transparent
+       hover:border-b-white/50 transition-border duration-300 ease-in-out cursor-pointer"><span class="relative top-[38%]"><strong class="mr-2">02</strong> CREW</span></span>
+       </a>
+ 
+       <a href="/followingPages/technologyPage.html">
+       <span id="techTab" class="inline-block align-center h-[100%] border-b-[3px] border-transparent
+       hover:border-b-white/50 transition-border duration-300 ease-in-out cursor-pointer"><span class="relative top-[38%]"><strong class="mr-2">03</strong> TECHNOLOGY</span></span>
+       </a>
+ 
+        
+      </nav>
+   </div>
+  </header>
+
+<main>
+ <div>
+  <h1 class="text-[1rem] lg:text-[1.7rem] font-light font-[barlow] tracking-widest pl-[12%] mt-[3%]"><span class="text-gray-700 font-bold mr-[1rem]">01</span>PICK YOUR DESTINATION</h1>
+ </div>
+
+ <!--div for picture of planet-->
+ <section id="sectionDestination" class="grid-row-2 grid-cols-1 lg:grid-row-1 grid lg:grid-cols-2 mt-[2rem] lg:mt-[7rem] w-full lg:w-[73%] lg:mx-auto animate-changingTab duration-800">
+   <div class="py-[2rem]">
+     <img alt="a planet" class="mx-auto w-[8rem] md:w-[15rem] lg:w-full" id="planet" src="/assets/destination/image-moon.png">
+   </div>
+
+   <!--div for facts of planet-->
+   <div class=" px-[4%] lg:px-[0px] py-[2rem] lg:pl-[5rem]">
+     <div class="justify-evenly md:px-[20%] lg:px-[0px] md:justify-between lg:justify-normal flex space-x-[3%] tracking-widest h-[8%] font-light">
+
+       <span tabindex="0" id="moonTab" class="border-b-[3px] border-transparent hover:border-b-white/50
+        transition-border duration-300 ease-in-out cursor-pointer">MOON</span>
+
+       <span tabindex="0" id="marsTab" class="border-b-[3px] border-transparent hover:border-b-white/50
+       transition-border duration-300 ease-in-out cursor-pointer">MARS</span>
+
+       <span tabindex="0" id="europaTab" class="border-b-[3px] border-transparent hover:border-b-white/50
+       transition-border duration-300 ease-in-out cursor-pointer">EUROPA</span>
+
+       <span tabindex="0" id="titanTab" class="border-b-[3px] border-transparent hover:border-b-white/50
+       transition-border duration-300 ease-in-out cursor-pointer">TITAN</span>
+
+     </div>
+
+     <h2 class="text-center lg:text-left mx-auto lg:mx-[0px] text-5xl lg:text-8xl font-[bellefair] my-[10%]" id="planetName">MOON</h2>
+
+     <p class="md:px-[20%] lg:px-[0px] text-md text-center lg:text-left lg:text-lg text-[#D0D6F9]" id="factsParagraph">
+      See our planet as you’ve never seen it before. A perfect relaxing trip away to help 
+      regain perspective and come back refreshed. While you’re there, take in some history 
+      by visiting the Luna 2 and Apollo 11 landing sites.
+
+     </p>
+
+     <div class="border-b-[1px] border-white/30 my-[8%]"></div>
+
+     <div class="flex-col md:flex-row lg:flex-row flex items-center md:px-[20%] lg:px-[0px] lg:items-normal md:space-y-[0px] space-y-[1.6rem] md:space-x-[5rem] lg:space-x-[5rem]">
+       <div class="text-center">
+        <h4 class="text-[#D0D6F9] " id="averageDistance">AVG. DISTANCE</h4>
+        <span class="text-3xl font-[bellefair]" id="averageDistanceValue">384,400 KM</span>
+       </div>
+
+       <div class="text-center">
+        <h4 class="text-[#D0D6F9]" id="travelTime">EST. TRAVEL TIME</h4>
+        <span class="text-3xl font-[bellefair]" id="travelTimeValue">3 DAYS</span>
+       </div>
+     </div>
+   </div>
+  </section>
+</main>
+
+
+<div id="mobileMenu" class="hidden fixed bg-black/30 backdrop-blur  h-[100%] w-[70%] top-[0px] left-[30%] z-20">
+  <img alt="click to close menu" tabindex="0" id="closeMenu" class="relative top-[3%] left-[84%] cursor-pointer" src="/assets/shared/icon-close.svg">
+
+  <!--Menu for mobile-->
+  <nav class="flex flex-col font-[barlow] mt-[25%] space-y-[10%] pl-[6%]">
+
+        <a href="/index.html">
+        <span id="mobileTab1" tabindex="0" class="block align-center h-[100%] border-r-[3px] border-transparent
+        hover:border-r-white/50 transition-border duration-300 ease-in-out cursor-pointer"><span class="relative top-[38%]"><strong class="mr-2">00</strong> HOME</span></span>
+        </a>
+
+        <a href="#">
+        <span id="mobileTab2" tabindex="0" class="block align-center h-[100%] border-r-[3px] border-transparent
+        hover:border-r-white/50 transition-border duration-300 ease-in-out cursor-pointer"><span class="relative top-[38%]"><strong class="mr-2">01</strong> DESTINATION</span></span>
+        </a>
+
+        <a href="/followingPages/crewPage.html">
+        <span id="mobileTab3" tabindex="0" class="block align-center h-[100%] border-r-[3px] border-transparent
+        hover:border-r-white/50 transition-border duration-300 ease-in-out cursor-pointer"><span class="relative top-[38%]"><strong class="mr-2">02</strong> CREW</span></span>
+        </a>
+
+        <a href="/followingPages/technologyPage.html">
+        <span id="mobileTab4" tabindex="0" class="block align-center h-[100%] border-r-[3px] border-transparent
+        hover:border-r-white/50 transition-border duration-300 ease-in-out cursor-pointer"><span class="relative top-[38%]"><strong class="mr-2">03</strong> TECHNOLOGY</span></span>
+        </a>
+
+      
+    </nav>
+  </div>
+  
+</body>
+</html>
